@@ -1,5 +1,11 @@
-@import 'tailwindcss';
+@import "tailwindcss";
+
+@plugin "daisyui" {
+  themes: light --default, dark --prefersdark, synthwave;
+}
+
 @import "tw-animate-css";
+
 
 @custom-variant dark (&:is(.dark *));
 
@@ -114,6 +120,7 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
