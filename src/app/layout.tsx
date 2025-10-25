@@ -23,7 +23,7 @@ export default function RootLayout({
       <body
         className={`${golosText.variable} antialiased`}
         style={{
-          backgroundImage: 'url(/images/backgrounds/background.png)',
+          backgroundImage: 'url(/images/backgrounds/bgwebp.webp)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed',

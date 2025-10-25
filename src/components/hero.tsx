@@ -12,49 +12,49 @@ export default function Hero() {
       {/* Floating Icons - Scattered */}
       <div className="absolute inset-0 pointer-events-none">
         {/* Top Left - 1000x */}
-        <div className="absolute top-[25%] left-[25%] animate-bounce" style={{ animationDuration: '3s', animationDelay: '0s' }}>
+        <div className="absolute top-[25%] left-[20%] animate-bounce" style={{ animationDuration: '3s', animationDelay: '0s' }}>
           <Image 
             src="/images/icons/1000x.png"
             alt="1000x"
             width={160}
             height={160}
             unoptimized={false}
-            className="opacity-90"
+            className="opacity-80"
           />
               </div>
               {/* top center - lebandit */}
-              <div className="absolute top-[18%] left-[45%] animate-bounce" style={{ animationDuration: '3s', animationDelay: '0s' }}>
+              <div className="absolute top-[18%] left-[40%] animate-bounce" style={{ animationDuration: '3s', animationDelay: '0s' }}>
                   <Image
                       src="/images/icons/lebandit.png"
                       alt="Lebandit"
                       width={130}
                       height={130}
                       unoptimized={false}
-                      className="opacity-90"
+                      className="opacity-80"
                   />
               </div>
 
         {/* Top Right - Wanted */}
-        <div className="absolute top-[22%] right-[30%] animate-bounce" style={{ animationDuration: '4s', animationDelay: '0.5s' }}>
+        <div className="absolute top-[22%] right-[20%] animate-bounce" style={{ animationDuration: '4s', animationDelay: '0.5s' }}>
           <Image 
             src="/images/icons/wanted.png"
             alt="Wanted"
             width={160}
                       height={160}
                       unoptimized={false}
-            className="opacity-90"
+            className="opacity-80"
           />
         </div>
 
         {/* Middle Left - Casino Chip */}
-        <div className="absolute top-[42%] left-[26%] animate-bounce" style={{ animationDuration: '3.5s', animationDelay: '1s' }}>
+        <div className="absolute top-[42%] left-[20%] animate-bounce" style={{ animationDuration: '3.5s', animationDelay: '1s' }}>
           <Image 
             src="/images/icons/casino-chip.png"
             alt="Casino Chip"
             width={220}
                       height={220}
                       unoptimized={false}
-            className="opacity-90"
+            className="opacity-80"
           />
         </div>
 
@@ -66,19 +66,19 @@ export default function Hero() {
             width={160}
                       height={160}
                       unoptimized={false}
-            className="opacity-90"
+            className="opacity-80"
           />
         </div>
 
         {/* Bottom Left - Scatter */}
-        <div className="absolute top-[63%] left-[18%] animate-bounce" style={{ animationDuration: '3.8s', animationDelay: '0.3s' }}>
+        <div className="absolute top-[68%] left-[18%] animate-bounce" style={{ animationDuration: '3.8s', animationDelay: '0.3s' }}>
           <Image 
             src="/images/icons/scatter.png"
             alt="Scatter"
             width={200}
                       height={200}
                       unoptimized={false}
-            className="opacity-90 rotate-12"
+            className="opacity-80 rotate-12"
           />
         </div>
 
@@ -90,18 +90,18 @@ export default function Hero() {
             width={160}
                       height={160}
                       unoptimized={false}
-            className="opacity-90"
+            className="opacity-80"
           />
               </div>
               {/* Bottom Right - quack */}
-              <div className="absolute top-[70%] right-[30%] animate-bounce" style={{ animationDuration: '4.2s', animationDelay: '1.2s' }}>
+              <div className="absolute top-[76%] right-[30%] animate-bounce" style={{ animationDuration: '4.2s', animationDelay: '1.2s' }}>
                   <Image
                       src="/images/icons/quack.png"
                       alt="Quack"
                       width={360}
                       height={360}
                       unoptimized={false}
-                      className="opacity-90 rotate-[-12deg]"
+                      className="opacity-80 rotate-[-12deg]"
                   />
               </div>
       </div>
