@@ -1,3 +1,5 @@
+'use client';
+
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -33,9 +35,16 @@ export default function Navbar() {
                 </Link>
               </li>
               <li>
-                <Link href="/claim-bonus" className="text-white hover:text-cyan-400 font-medium text-sm transition-colors">
+                <a 
+                  href="#bonuses" 
+                  className="text-white hover:text-cyan-400 font-medium text-sm transition-colors cursor-pointer"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    document.getElementById('bonuses')?.scrollIntoView({ behavior: 'smooth' });
+                  }}
+                >
                   CLAIM BONUS
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
@@ -43,7 +52,7 @@ export default function Navbar() {
           {/* Right side - CTA Button */}
           <div className="flex items-center gap-4">
             <button className="hidden sm:block btn btn-md bg-cyan-400 hover:bg-cyan-500 text-white border-none font-bold px-6">
-              JOIN THE SERVER
+              <Link href="https://discord.gg/vxuTWdCzRH" target="_blank">JOIN THE SQUAD</Link>
             </button>
             
             {/* Mobile menu */}
@@ -56,7 +65,17 @@ export default function Navbar() {
               <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-1 p-2 shadow bg-slate-800 rounded-box w-52">
                 <li><Link href="/">HOME</Link></li>
                 <li><Link href="/leaderboard">LEADERBOARD</Link></li>
-                <li><Link href="/claim-bonus">CLAIM BONUS</Link></li>
+                <li>
+                  <a 
+                    href="#bonuses"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      document.getElementById('bonuses')?.scrollIntoView({ behavior: 'smooth' });
+                    }}
+                  >
+                    CLAIM BONUS
+                  </a>
+                </li>
               </ul>
             </div>
           </div>

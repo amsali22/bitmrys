@@ -87,7 +87,7 @@ export default function Footer() {
           {/* Social Links */}
           <div className="flex gap-4">
             <a 
-              href="https://discord.gg/bitmryuss" 
+              href="https://discord.gg/vxuTWdCzRH" 
               target="_blank" 
               rel="noopener noreferrer"
               className="w-10 h-10 rounded-full bg-slate-800 hover:bg-cyan-500 flex items-center justify-center text-white transition-all"

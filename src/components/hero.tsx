@@ -1,5 +1,8 @@
+'use client';
+
 import { IconGiftFilled, IconTrophyFilled } from '@tabler/icons-react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Hero() {
   return (
@@ -130,14 +133,21 @@ export default function Hero() {
         
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-        <button className="btn btn-lg bg-cyan-500 hover:bg-cyan-600 text-white border-none font-bold px-8">
+        <a 
+          href="#bonuses"
+          onClick={(e) => {
+            e.preventDefault();
+            document.getElementById('bonuses')?.scrollIntoView({ behavior: 'smooth' });
+          }}
+          className="btn btn-lg bg-cyan-500 hover:bg-cyan-600 text-white border-none font-bold px-8 cursor-pointer"
+        >
             <IconGiftFilled className="w-5 h-5" />
             CLAIM BONUSES
-        </button>
-        <button className="btn btn-lg bg-gray-700 hover:bg-gray-800 text-white border-none font-bold px-8">
+        </a>
+        <Link href="/leaderboard" className="btn btn-lg bg-gray-700 hover:bg-gray-800 text-white border-none font-bold px-8">
             <IconTrophyFilled className="w-5 h-5" />
             LEADERBOARDS
-        </button>
+        </Link>
               </div>
         
         

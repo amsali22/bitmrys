@@ -1,19 +1,18 @@
-import { ExternalLink } from 'lucide-react';
 import Image from 'next/image';
 
 export default function Bonuses() {
   const bonuses = [
     {
-      name: "CSGOGEM",
-      logo: "csgogem.png",
-      website: "CSGOGEM.COM",
+      name: "ELDOAH",
+      logo: "eldoah.png",
+      website: "ELDOAH.COM",
       mainBonus: "5% DEPOSIT BONUS",
-      features: ["+$10 BALANCE"],
+      features: ["Free Spins"],
       buttonText: "CLAIM BONUS",
       info: "HOW TO CLAIM BONUS",
-      link: "https://csgogem.com/?ref=MRYUSS"
+      link: "https://www.eldoah.com"
     },
-    {
+ /*    {
       name: "CSGOROLL",
       logo: "logo-csgoroll.png",
       website: "CSGOROLL.COM",
@@ -52,11 +51,11 @@ export default function Bonuses() {
       buttonText: "CLAIM BONUS",
       info: "HOW TO CLAIM BONUS",
       link: "https://rain.gg/?ref=MRYUSS"
-    }
+    } */
   ];
 
   return (
-    <section className="py-20 px-4">
+    <section id="bonuses" className="py-20 px-4">
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -77,13 +76,13 @@ export default function Bonuses() {
               >
                 <div className="card-body">
                   {/* Header - Centered Logo and Text */}
-                  <div className="flex flex-col items-center text-center mb-6">
-                    <div className="w-32 h-32 flex items-center justify-center  rounded-lg p-2 mb-2">
+                  <div className="flex flex-col items-center text-center">
+                    <div className="w-48 h-48 flex items-center justify-center  rounded-lg ">
                       <Image 
                         src={`/images/logos/${bonus.logo}`} 
                         alt={bonus.name}
-                        width={120}
-                        height={120}
+                        width={260}
+                        height={260}
                         className="object-contain"
                       />
                     </div>
