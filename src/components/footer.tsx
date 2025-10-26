@@ -40,7 +40,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/claim-bonus" className="text-gray-400 hover:text-cyan-400 transition-colors flex items-center gap-2">
+                <Link href="#bonuses" className="text-gray-400 hover:text-cyan-400 transition-colors flex items-center gap-2">
                 <IconGiftFilled className="w-4 h-4" />
                   Claim Bonus
                 </Link>
@@ -53,7 +53,7 @@ export default function Footer() {
             <h3 className="text-white font-bold mb-4">SUPPORT</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/help" className="text-gray-400 hover:text-cyan-400 transition-colors flex items-center gap-2">
+                <Link href="https://www.gambleaware.org" className="text-gray-400 hover:text-cyan-400 transition-colors flex items-center gap-2">
                 <IconInfoSquareRoundedFilled className="w-4 h-4" />
                   GambleAware
                 </Link>
