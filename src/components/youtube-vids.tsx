@@ -10,6 +10,25 @@ interface Video {
   videoId: string;
 }
 
+interface YouTubeAPIItem {
+  id: {
+    videoId: string;
+  };
+  snippet: {
+    title: string;
+    publishedAt: string;
+    thumbnails: {
+      high?: { url: string };
+      medium?: { url: string };
+      default?: { url: string };
+    };
+  };
+}
+
+interface YouTubeAPIResponse {
+  items: YouTubeAPIItem[];
+}
+
 async function getYouTubeVideos(): Promise<Video[]> {
   const API_KEY = process.env.YOUTUBE_API_KEY;
   const CHANNEL_ID = process.env.YOUTUBE_CHANNEL_ID || 'UCyour_channel_id';
@@ -73,17 +92,17 @@ async function getYouTubeVideos(): Promise<Video[]> {
       return fallbackVideos;
     }
 
-    const data = await response.json();
+    const data: YouTubeAPIResponse = await response.json();
     
     if (!data.items || data.items.length === 0) {
       console.warn('No videos found in YouTube API response');
       return fallbackVideos;
     }
     
-    return data.items.map((item: any) => ({
+    return data.items.map((item) => ({
       id: item.id.videoId,
       title: item.snippet.title,
-      thumbnail: item.snippet.thumbnails.high?.url || item.snippet.thumbnails.medium?.url || item.snippet.thumbnails.default?.url,
+      thumbnail: item.snippet.thumbnails.high?.url || item.snippet.thumbnails.medium?.url || item.snippet.thumbnails.default?.url || 'https://img.youtube.com/vi/default/maxresdefault.jpg',
       publishedAt: item.snippet.publishedAt,
       videoId: item.id.videoId
     }));
