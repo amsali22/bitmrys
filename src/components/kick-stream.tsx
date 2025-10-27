@@ -10,11 +10,19 @@ export default function KickStream() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    // Check if mobile and minimize by default
+    const isMobile = window.innerWidth < 768;
+    if (isMobile) {
+      setIsMinimized(true);
+    }
+  }, []);
+
+  useEffect(() => {
     // Check if stream is live
     const checkLiveStatus = async () => {
       try {
         // Kick.com API endpoint to check if channel is live
-        const response = await fetch(`https://kick.com/api/v2/channels/amine_12`);
+        const response = await fetch(`https://kick.com/api/v2/channels/bitmryuss`);
         const data = await response.json();
         setIsLive(data.livestream !== null);
       } catch (error) {
