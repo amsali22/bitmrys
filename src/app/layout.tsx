@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Golos_Text } from "next/font/google";
 import "./globals.css";
+import KickStream from "@/components/kick-stream";
 
 const golosText = Golos_Text({
   variable: "--font-golos-text",
@@ -33,6 +34,7 @@ export default function RootLayout({
         }}
       >
         {children}
+        <KickStream />
       </body>
     </html>
   );
