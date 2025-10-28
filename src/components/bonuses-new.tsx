@@ -11,7 +11,6 @@ interface Bonus {
   url: string;
   bonusCode: string;
   bonusAmount: string;
-  extraBonus?: string;
   steps: string[];
   active: boolean;
 }
@@ -98,20 +97,10 @@ export default function Bonuses() {
                     </div>
                   
                     {/* Main Bonus */}
-                    <div className="bg-slate-900/90 rounded-lg p-3 mb-2">
+                    <div className="bg-slate-900/90 rounded-lg p-3 mb-4">
                       <p className="text-xs text-gray-400 text-center mb-1 uppercase tracking-wider">Main Bonus</p>
                       <p className="text-white font-bold text-center text-sm">{bonus.bonusAmount}</p>
                     </div>
-
-                    {/* Extra Bonus */}
-                    {bonus.extraBonus && (
-                      <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-3 mb-4">
-                        <p className="text-xs text-green-400 text-center mb-1 uppercase tracking-wider">Extra</p>
-                        <p className="text-green-300 font-bold text-center text-sm">{bonus.extraBonus}</p>
-                      </div>
-                    )}
-                    
-                    {!bonus.extraBonus && <div className="mb-4"></div>}
                     
                     {/* Claim Button */}
                     <div className="card-actions">
