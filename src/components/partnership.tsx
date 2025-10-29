@@ -199,7 +199,7 @@ export default function Partnership() {
               </div>
               
               <p className="text-white font-semibold text-lg">
-                Fill the information and use the <span className="text-green-400 font-black">'MRYUSS'</span> Promocode on registration
+                Fill the information and use the <span className="text-green-400 font-black">MRYUSS</span> promocode on registration
               </p>
             </div>
 
