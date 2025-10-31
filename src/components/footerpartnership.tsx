@@ -4,7 +4,7 @@ import { IconBrandXFilled, IconInfoTriangleFilled, IconBrandDiscordFilled, IconB
 
 export default function FooterPartnership() {
   return (
-    <footer className="bg-[#102B20]/90 backdrop-blur-sm  ">
+    <footer className="bg-[#AD7833]/90 backdrop-blur-sm  ">
       <div className="max-w-6xl mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Logo & Brand */}
@@ -28,19 +28,19 @@ export default function FooterPartnership() {
             <h3 className="text-white font-bold mb-4">NAVIGATION</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/" className="text-gray-400 hover:text-green-400 transition-colors flex items-center gap-2">
+                <Link href="/" className="text-gray-400 hover:text-orange-400 transition-colors flex items-center gap-2">
                 <IconHomeFilled className="w-4 h-4" />
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="/leaderboard" className="text-gray-400 hover:text-green-400 transition-colors flex items-center gap-2">
+                <Link href="/leaderboard" className="text-gray-400 hover:text-orange-400 transition-colors flex items-center gap-2">
                 <IconTrophyFilled className="w-4 h-4" />
                   Leaderboard
                 </Link>
               </li>
               <li>
-                <Link href="#bonuses" className="text-gray-400 hover:text-green-400 transition-colors flex items-center gap-2">
+                <Link href="#bonuses" className="text-gray-400 hover:text-orange-400 transition-colors flex items-center gap-2">
                 <IconGiftFilled className="w-4 h-4" />
                   Claim Bonus
                 </Link>
@@ -53,7 +53,7 @@ export default function FooterPartnership() {
             <h3 className="text-white font-bold mb-4">SUPPORT</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="https://www.gambleaware.org" className="text-gray-400 hover:text-green-400 transition-colors flex items-center gap-2">
+                <Link href="https://www.gambleaware.org" className="text-gray-400 hover:text-orange-400 transition-colors flex items-center gap-2">
                 <IconInfoSquareRoundedFilled className="w-4 h-4" />
                   GambleAware
                 </Link>
@@ -90,7 +90,7 @@ export default function FooterPartnership() {
               href="https://discord.gg/vxuTWdCzRH" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="w-10 h-10 rounded-full bg-slate-800 hover:bg-green-500 flex items-center justify-center text-white transition-all"
+              className="w-10 h-10 rounded-full bg-slate-800 hover:bg-orange-500 flex items-center justify-center text-white transition-all"
               aria-label="Discord"
             >
               <IconBrandDiscordFilled className="w-5 h-5" />
@@ -99,7 +99,7 @@ export default function FooterPartnership() {
               href="https://kick.com/bitmryuss" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="w-10 h-10 rounded-full bg-slate-800 hover:bg-green-500 flex items-center justify-center text-white transition-all"
+              className="w-10 h-10 rounded-full bg-slate-800 hover:bg-orange-500 flex items-center justify-center text-white transition-all"
               aria-label="Kick"
             >
               <IconBrandKickFilled className="w-5 h-5" />
@@ -108,7 +108,7 @@ export default function FooterPartnership() {
               href="https://twitter.com/bitmryuss" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="w-10 h-10 rounded-full bg-slate-800 hover:bg-green-500 flex items-center justify-center text-white transition-all"
+              className="w-10 h-10 rounded-full bg-slate-800 hover:bg-orange-500 flex items-center justify-center text-white transition-all"
               aria-label="Twitter"
             >
             <IconBrandXFilled className="w-5 h-5" />
