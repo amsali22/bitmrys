@@ -13,8 +13,8 @@ export async function GET() {
       stats = await EldoahStats.create({ totalJoined: 370 });
     }
     
-    // Generate random increment between 2 and 5
-    const increment = Math.floor(Math.random() * 4) + 2; // Random number between 2-5
+    // Generate random increment between 10 and 20
+    const increment = Math.floor(Math.random() * 11) + 10; // Random number between 10-20
     
     // Increment the count
     stats.totalJoined += increment;
